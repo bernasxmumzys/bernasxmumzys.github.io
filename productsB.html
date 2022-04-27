@@ -1,0 +1,263 @@
+<!DOCTYPE>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Berna's Kitchen</title>
+
+<!-- CSS -->
+<style>
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  font-family: Georgia;
+  background-color: #659dbd;
+  color: #000000;
+}
+			img.logo{
+				position: fixed;
+				z-index: 1;
+			}
+#navbar {
+  background-color: #bc986a;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar [class=active] {
+  background-color: #8d8741;
+  color: white;
+}
+
+.dropbtn {
+  background-color: #bc986a;
+  color: white;
+  padding: 17px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #8d8741;
+  color: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: 	#808080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+ 
+dl {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+table, th, td
+	{border: 1px solid black; background: rgb(252,166,166);background: radial-gradient(circle, rgba(252,166,166,1) 9%, rgba(173,252,213,1) 89%);
+ padding:1px; font-family:'Courier New';}
+		
+th
+	{font-size:22px}
+	
+
+	
+</style>
+</head>
+
+<body>
+
+<header>
+
+<!-- Navigation Bar -->
+<div id="navbar">
+  <a href="group1_proj_main.html">About Us</a>
+  <div class="dropdown">
+	<button class="active dropbtn">Products</button>
+	<div class="dropdown-content">
+		<a class="active" href="productsB.html">Berna's Menu</a>
+		<a href="productsM.html">Mumsy's Menu</a>
+		</div>
+	</div>
+  <a href="gallery.html">Gallery</a>
+  <a href="testim.html">Testimonials</a>
+  <a href="contact.html">Contact Us</a>
+  <img class="logo" src="mumsylogo.jpg" width="150" height="150" alt="Mumsy Kitchen Logo" style="right: 85px;">
+  <img class="logo" src="x.png" width="35" height="35" alt="x" style="right: 250px; top: 50px;">
+  <img class="logo" src="bklogo.jpg" width="150" height="150" alt="Berna's Kitchen Logo" style="right:300px;">
+</div>
+</header>
+
+<hr>
+
+<!-- Product Display -->
+<h1>Products</h1>
+<table style="text-align:center;margin-right:auto;margin-left:auto;width:80%">
+			
+			<tr>
+			<th colspan="5">THE GALLERY</th>
+			</tr>
+			
+			<tr>
+			<td><img class="pic" src="chicken.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/149007936844436/">Baked Herbed Chicken</a></h3>
+	<p class="desc">A premium baked chicked with thyme and other spices. With baby potatoes and gravy on the side</p></td>
+			<td><img class="pic"src="ribs.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/155302782881618/">Baby Back Ribs</a></h3>
+	<p class="desc">Pork baby back ribs, spiced with a smoky - sweet homemade dry rub and finished with my special bbq sauce. Comes with coleslaw, an ultimate fall off the bone experience!</p></td>
+			<td><img class="pic"src="karekare.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/129147418830488/">Kare Kare</a></h3>
+	<p class="desc">Kare Kare, its a peanut stew complemented with sauteed fermented shrimps or we call it "Bagoong". </p></td>
+			<td><img class="pic"src="salmon.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/129137175498179/">Baked Salmon</a></h3>
+	<p class="desc">Baked Salmon - A slab of pink salmon, baked and crusted with cheese, herbs and secret sauce. Paired with seasonal veggies and our favorite white garlic butter dip and lemon wedges.</p></td>
+			<td><img class="pic"src="shrimp.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/130213598723870/">Shrimp Con Mayonesa</a></h3>
+	<p class="desc">A concoction of garlic, butter, shrimp, mushroom, mayo with herbs and spices. A sure crowd pleaser.</p></td>
+			</tr>
+			
+			<tr>
+			<td><img class="pic"src="pasta.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/134436278301602/">Pasta Genovese</a></h3>
+	<p class="desc">Farfalle pasta embeded with my own twist on classic pesto sauce, olive oil, parmesan, peppers, shrimps and mushroom. Best paired with any protein dish.</p></td>
+			<td><img class="pic"src="beefpacked.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/394237622321465/">Beef Stroganoff with Mashed Potatoes</a></h3>
+	<p class="desc">A concontion of beef cooked to its tenderness and our version of mushroom sauce, topped with more shrooms and french beans, paired with mashed potato. A great combination right?</p></td>
+			<td><img class="pic"src="porchetta.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/487722862972940">Flat Porchetta</a></h3>
+	<p class="desc">Flat Porchetta, a slab of pork belly marinated with garlic, our special rub and then baked to its perfection for that crispy skin, soft and tender meat inside.</p></td>
+			<td><img class="pic"src="prawns.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/393537565724804">Baked Prawns</a></h3>
+	<p class="desc">A cheesy and extra tasty dish that’s full of protein. A comfort food, that will surely delight you in every bite</p></td>
+			<td><img class="pic"src="bakedmac.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/a.340716771006884/148575483554348/">Premium Baked Mac</a></h3>
+	<p class="desc">Pasta coated with a tasty and meaty marinara sauce, covered with a heavenly cheese sauce and then baked to perfection until a bit toasted and melty.</p>)</td>
+			</tr>
+			
+			<tr>
+			<td><img class="pic"src="lumpia.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/a.128775142201049/369912058087355/">Fresh Vegetable Lumpia</a></h3>
+	<p class="desc">Fresh handmade egg wrapper, lettuce, veggies cooked and seasoned perferctly to match its sweet savory sauce, chopped nuts and garlic.</p></td>
+			<td><img class="pic"src="potato.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/129141372164426/">Chunky Overload Potato Salad</a></h3>
+	<p class="desc">A classic recipe made with potatoes, chicken, eggs, mayo and spices. Guaranteed yumminess in evey bite. </p></td>
+			<td><img class="pic"src="kuchinta.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/129149988830231/">Black Kuchinta with Dulce De Leche Dip and Toasted Coconut </a></h3>
+	<p class="desc">A famous local kakanin known as kuchinta with a twist. Mixture of flour, cassava, sugar and whole lot of loving.</p></td>
+			<td><img class="pic"src="cookies.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/262261252185770/">White Chocolate Cranberry Walnut Cookies</a></h3>
+	<p class="desc">These White Chocolate Cranberry Walnut Cookies are chewy, soft, thick and filled with premium ingredients.</p></td>
+			<td><img class="pic"src="coffeejelly.jpg" width="240px" height="240px">
+	<h3><a href="https://www.facebook.com/bernaskitchen23/photos/529147962163763/">Coffee Jello Cooler</a></h3>
+	<p class="desc">A glass of cold Coffee Jello Cooler while reading a book by pool or beach?</p></td>
+			</tr>
+			</table>
+
+
+
+
+</body>
+
+<hr>
+
+<footer>
+<h1>Contact Us</h1>
+
+<ul>
+	<li>Berna's Kitchen</li>
+	<li>Phone: 09217295952</li>
+	<li>Email: angelesbryce@gmail.com</li>
+	<li>Address: Lot 3 Block 3, Visitation Street, Sacred Heart Village, Caloocan City, Metro Manila</li>
+</ul>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.432768809951!2d121.07055491410898!3d14.744631377485431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1df08856c3d%3A0x49e97e1df824e0b7!2sBerna&#39;s%20Kitchen!5e0!3m2!1sen!2sph!4v1650534517734!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<ul>
+	<li>Mumsy's Kitchen</li>
+	<li>Phone: 09985348125</li>
+	<li>Email: buenaventuraadamlee@gmail.com</li>
+	<li>Address: 102 Kansas St. Pasig Greenpark, Barangay Dela Paz, Pasig City, Metro Manila</li>
+</ul>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.1829318410915!2d121.10005188693162!3d14.61435248241478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b83fc35418cb%3A0x788025f68517a009!2s102%20Kansas%2C%20Pasig%2C%201800%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1651052072208!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<h6>by Bryce Angeles, Adam Buenaventura, Daniel Insigne, and Jose Roberto Kam</h6>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+
+
+</html>

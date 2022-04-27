@@ -1,0 +1,518 @@
+<!DOCTYPE>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Berna's Kitchen</title>
+
+<!-- CSS -->
+<style>
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  font-family: Georgia;
+  background-color: #659dbd;
+  color: #000000;
+}
+
+			img.logo{
+				position: fixed;
+				z-index: 1;
+			}
+#navbar {
+  background-color: #bc986a;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar [class=active] {
+  background-color: #8d8741;
+  color: white;
+}
+
+.dropbtn {
+  background-color: #bc986a;
+  color: white;
+  padding: 17px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: 	#808080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+p {
+  text-indent: 50px;
+  width: 1000px;
+  align: center;
+ }
+fieldset{
+  border: 1px solid rgb(255,232,57);
+  width: 400px;
+  margin:auto;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<!-- Navigation Bar -->
+<div id="navbar">
+  <a href="group1_proj_main.html">About Us</a>
+  <div class="dropdown">
+	<button class="dropbtn">Products</button>
+	<div class="dropdown-content">
+		<a href="productsB.html">Berna's Menu</a>
+		<a href="productsM.html">Mumsy's Menu</a>
+		</div>
+	</div>
+  <a href="gallery.html">Gallery</a>
+  <a href="testim.html">Testimonials</a>
+  <a class="active" href="contact.html">Contact Us</a>
+  <img class="logo" src="mumsylogo.jpg" width="150" height="150" alt="Mumsy Kitchen Logo" style="right: 85px;">
+  <img class="logo" src="x.png" width="35" height="35" alt="x" style="right: 250px; top: 50px;">
+  <img class="logo" src="bklogo.jpg" width="150" height="150" alt="Berna's Kitchen Logo" style="right:300px;">
+</div>
+</header>
+
+<hr>
+
+<!-- Forms Display -->
+<h1>Get in Touch with Us</h1>
+
+<form action="mailto:bnangeles@mymail.mapua.edu.ph" method="post"  
+	  style="width: 60vw; margin-left: 0vw; color:#f2f2f2; 
+	  font-family:tahoma ">
+<br/>
+<br/>
+<fieldset ><legend>Personal Information</legend>
+<input type="text" name="name" size=15 maxlength=20 autocomplete="on" placeholder="First Name"><br/><br/>
+<input type="text" name="name" size=15 maxlength=20 autocomplete="on" placeholder="Last Name"><br/><br/>
+<input type="text" name="name" size=10 maxlength=20 autocomplete="on" placeholder="Middle Name"><br/><br/>
+<input type="number" name="age" min=18 max=100 placeholder="Age"><br/><br/>
+Date of Birth: <input type=date name="dob">
+</fieldset>
+<br>
+<br>
+<fieldset><legend>Order Information</legend>
+Select: <input type="radio" name="order" value="bk">Berna's Kitchen
+	 <input type="radio" name="order" value="mk">Mumsy's Kitchen
+	 <br>
+	 <br>
+	 Order:
+        <br /><textarea rows="4" cols="50" placeholder="Input here your order and we will message you through email!" id="emercontact"></textarea>
+		Other:
+        <br /><textarea rows="4" cols="50" placeholder="Input here your other needs/requirements for the order for consultation" id="emercontact"></textarea>
+</fieldset>
+<br/>
+<br/>
+<fieldset><legend>Contact Information</legend>
+<input type="email" name="email" size=25 maxlength=30 autocomplete="on" placeholder="E-mail">
+<br/>
+<br/>
+<input type="text" name="number" size=1 maxlength=4 placeholder="Area Code"> + <input type="text" name="number" size=15 maxlength=20 autocomplete="on" placeholder="Phone Number">
+</fieldset>
+<br/>
+<br/>
+<fieldset><legend>Address</legend>
+<input type="text" name="address" size=33 maxlength=60 autocomplete="on"  placeholder="Address Line 1">
+<br/>
+<br/>
+<input type="text" name="address" size=33 maxlength=60 autocomplete="on" placeholder="Address Line 2">
+<br/>
+<br/>
+<input type="text" name="address" size=15 maxlength=30 autocomplete="on" placeholder="City">
+<input type="text" name="address" size=15 maxlength=30 autocomplete="on" placeholder="Region">
+<br/>
+<br/>
+<input type="text" name="address" size=15 maxlength=30 autocomplete="on" placeholder="Postal / Zip Code">
+
+<select id="country" name="country">
+   <option value="Country">Country</option>
+   <option value="Afganistan">Afghanistan</option>
+   <option value="Albania">Albania</option>
+   <option value="Algeria">Algeria</option>
+   <option value="American Samoa">American Samoa</option>
+   <option value="Andorra">Andorra</option>
+   <option value="Angola">Angola</option>
+   <option value="Anguilla">Anguilla</option>
+   <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+   <option value="Argentina">Argentina</option>
+   <option value="Armenia">Armenia</option>
+   <option value="Aruba">Aruba</option>
+   <option value="Australia">Australia</option>
+   <option value="Austria">Austria</option>
+   <option value="Azerbaijan">Azerbaijan</option>
+   <option value="Bahamas">Bahamas</option>
+   <option value="Bahrain">Bahrain</option>
+   <option value="Bangladesh">Bangladesh</option>
+   <option value="Barbados">Barbados</option>
+   <option value="Belarus">Belarus</option>
+   <option value="Belgium">Belgium</option>
+   <option value="Belize">Belize</option>
+   <option value="Benin">Benin</option>
+   <option value="Bermuda">Bermuda</option>
+   <option value="Bhutan">Bhutan</option>
+   <option value="Bolivia">Bolivia</option>
+   <option value="Bonaire">Bonaire</option>
+   <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+   <option value="Botswana">Botswana</option>
+   <option value="Brazil">Brazil</option>
+   <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+   <option value="Brunei">Brunei</option>
+   <option value="Bulgaria">Bulgaria</option>
+   <option value="Burkina Faso">Burkina Faso</option>
+   <option value="Burundi">Burundi</option>
+   <option value="Cambodia">Cambodia</option>
+   <option value="Cameroon">Cameroon</option>
+   <option value="Canada">Canada</option>
+   <option value="Canary Islands">Canary Islands</option>
+   <option value="Cape Verde">Cape Verde</option>
+   <option value="Cayman Islands">Cayman Islands</option>
+   <option value="Central African Republic">Central African Republic</option>
+   <option value="Chad">Chad</option>
+   <option value="Channel Islands">Channel Islands</option>
+   <option value="Chile">Chile</option>
+   <option value="China">China</option>
+   <option value="Christmas Island">Christmas Island</option>
+   <option value="Cocos Island">Cocos Island</option>
+   <option value="Colombia">Colombia</option>
+   <option value="Comoros">Comoros</option>
+   <option value="Congo">Congo</option>
+   <option value="Cook Islands">Cook Islands</option>
+   <option value="Costa Rica">Costa Rica</option>
+   <option value="Cote DIvoire">Cote DIvoire</option>
+   <option value="Croatia">Croatia</option>
+   <option value="Cuba">Cuba</option>
+   <option value="Curaco">Curacao</option>
+   <option value="Cyprus">Cyprus</option>
+   <option value="Czech Republic">Czech Republic</option>
+   <option value="Denmark">Denmark</option>
+   <option value="Djibouti">Djibouti</option>
+   <option value="Dominica">Dominica</option>
+   <option value="Dominican Republic">Dominican Republic</option>
+   <option value="East Timor">East Timor</option>
+   <option value="Ecuador">Ecuador</option>
+   <option value="Egypt">Egypt</option>
+   <option value="El Salvador">El Salvador</option>
+   <option value="Equatorial Guinea">Equatorial Guinea</option>
+   <option value="Eritrea">Eritrea</option>
+   <option value="Estonia">Estonia</option>
+   <option value="Ethiopia">Ethiopia</option>
+   <option value="Falkland Islands">Falkland Islands</option>
+   <option value="Faroe Islands">Faroe Islands</option>
+   <option value="Fiji">Fiji</option>
+   <option value="Finland">Finland</option>
+   <option value="France">France</option>
+   <option value="French Guiana">French Guiana</option>
+   <option value="French Polynesia">French Polynesia</option>
+   <option value="French Southern Ter">French Southern Ter</option>
+   <option value="Gabon">Gabon</option>
+   <option value="Gambia">Gambia</option>
+   <option value="Georgia">Georgia</option>
+   <option value="Germany">Germany</option>
+   <option value="Ghana">Ghana</option>
+   <option value="Gibraltar">Gibraltar</option>
+   <option value="Great Britain">Great Britain</option>
+   <option value="Greece">Greece</option>
+   <option value="Greenland">Greenland</option>
+   <option value="Grenada">Grenada</option>
+   <option value="Guadeloupe">Guadeloupe</option>
+   <option value="Guam">Guam</option>
+   <option value="Guatemala">Guatemala</option>
+   <option value="Guinea">Guinea</option>
+   <option value="Guyana">Guyana</option>
+   <option value="Haiti">Haiti</option>
+   <option value="Hawaii">Hawaii</option>
+   <option value="Honduras">Honduras</option>
+   <option value="Hong Kong">Hong Kong</option>
+   <option value="Hungary">Hungary</option>
+   <option value="Iceland">Iceland</option>
+   <option value="Indonesia">Indonesia</option>
+   <option value="India">India</option>
+   <option value="Iran">Iran</option>
+   <option value="Iraq">Iraq</option>
+   <option value="Ireland">Ireland</option>
+   <option value="Isle of Man">Isle of Man</option>
+   <option value="Israel">Israel</option>
+   <option value="Italy">Italy</option>
+   <option value="Jamaica">Jamaica</option>
+   <option value="Japan">Japan</option>
+   <option value="Jordan">Jordan</option>
+   <option value="Kazakhstan">Kazakhstan</option>
+   <option value="Kenya">Kenya</option>
+   <option value="Kiribati">Kiribati</option>
+   <option value="Korea North">Korea North</option>
+   <option value="Korea Sout">Korea South</option>
+   <option value="Kuwait">Kuwait</option>
+   <option value="Kyrgyzstan">Kyrgyzstan</option>
+   <option value="Laos">Laos</option>
+   <option value="Latvia">Latvia</option>
+   <option value="Lebanon">Lebanon</option>
+   <option value="Lesotho">Lesotho</option>
+   <option value="Liberia">Liberia</option>
+   <option value="Libya">Libya</option>
+   <option value="Liechtenstein">Liechtenstein</option>
+   <option value="Lithuania">Lithuania</option>
+   <option value="Luxembourg">Luxembourg</option>
+   <option value="Macau">Macau</option>
+   <option value="Macedonia">Macedonia</option>
+   <option value="Madagascar">Madagascar</option>
+   <option value="Malaysia">Malaysia</option>
+   <option value="Malawi">Malawi</option>
+   <option value="Maldives">Maldives</option>
+   <option value="Mali">Mali</option>
+   <option value="Malta">Malta</option>
+   <option value="Marshall Islands">Marshall Islands</option>
+   <option value="Martinique">Martinique</option>
+   <option value="Mauritania">Mauritania</option>
+   <option value="Mauritius">Mauritius</option>
+   <option value="Mayotte">Mayotte</option>
+   <option value="Mexico">Mexico</option>
+   <option value="Midway Islands">Midway Islands</option>
+   <option value="Moldova">Moldova</option>
+   <option value="Monaco">Monaco</option>
+   <option value="Mongolia">Mongolia</option>
+   <option value="Montserrat">Montserrat</option>
+   <option value="Morocco">Morocco</option>
+   <option value="Mozambique">Mozambique</option>
+   <option value="Myanmar">Myanmar</option>
+   <option value="Nambia">Nambia</option>
+   <option value="Nauru">Nauru</option>
+   <option value="Nepal">Nepal</option>
+   <option value="Netherland Antilles">Netherland Antilles</option>
+   <option value="Netherlands">Netherlands (Holland, Europe)</option>
+   <option value="Nevis">Nevis</option>
+   <option value="New Caledonia">New Caledonia</option>
+   <option value="New Zealand">New Zealand</option>
+   <option value="Nicaragua">Nicaragua</option>
+   <option value="Niger">Niger</option>
+   <option value="Nigeria">Nigeria</option>
+   <option value="Niue">Niue</option>
+   <option value="Norfolk Island">Norfolk Island</option>
+   <option value="Norway">Norway</option>
+   <option value="Oman">Oman</option>
+   <option value="Pakistan">Pakistan</option>
+   <option value="Palau Island">Palau Island</option>
+   <option value="Palestine">Palestine</option>
+   <option value="Panama">Panama</option>
+   <option value="Papua New Guinea">Papua New Guinea</option>
+   <option value="Paraguay">Paraguay</option>
+   <option value="Peru">Peru</option>
+   <option value="Phillipines">Philippines</option>
+   <option value="Pitcairn Island">Pitcairn Island</option>
+   <option value="Poland">Poland</option>
+   <option value="Portugal">Portugal</option>
+   <option value="Puerto Rico">Puerto Rico</option>
+   <option value="Qatar">Qatar</option>
+   <option value="Republic of Montenegro">Republic of Montenegro</option>
+   <option value="Republic of Serbia">Republic of Serbia</option>
+   <option value="Reunion">Reunion</option>
+   <option value="Romania">Romania</option>
+   <option value="Russia">Russia</option>
+   <option value="Rwanda">Rwanda</option>
+   <option value="St Barthelemy">St Barthelemy</option>
+   <option value="St Eustatius">St Eustatius</option>
+   <option value="St Helena">St Helena</option>
+   <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+   <option value="St Lucia">St Lucia</option>
+   <option value="St Maarten">St Maarten</option>
+   <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+   <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+   <option value="Saipan">Saipan</option>
+   <option value="Samoa">Samoa</option>
+   <option value="Samoa American">Samoa American</option>
+   <option value="San Marino">San Marino</option>
+   <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+   <option value="Saudi Arabia">Saudi Arabia</option>
+   <option value="Senegal">Senegal</option>
+   <option value="Seychelles">Seychelles</option>
+   <option value="Sierra Leone">Sierra Leone</option>
+   <option value="Singapore">Singapore</option>
+   <option value="Slovakia">Slovakia</option>
+   <option value="Slovenia">Slovenia</option>
+   <option value="Solomon Islands">Solomon Islands</option>
+   <option value="Somalia">Somalia</option>
+   <option value="South Africa">South Africa</option>
+   <option value="Spain">Spain</option>
+   <option value="Sri Lanka">Sri Lanka</option>
+   <option value="Sudan">Sudan</option>
+   <option value="Suriname">Suriname</option>
+   <option value="Swaziland">Swaziland</option>
+   <option value="Sweden">Sweden</option>
+   <option value="Switzerland">Switzerland</option>
+   <option value="Syria">Syria</option>
+   <option value="Tahiti">Tahiti</option>
+   <option value="Taiwan">Taiwan</option>
+   <option value="Tajikistan">Tajikistan</option>
+   <option value="Tanzania">Tanzania</option>
+   <option value="Thailand">Thailand</option>
+   <option value="Togo">Togo</option>
+   <option value="Tokelau">Tokelau</option>
+   <option value="Tonga">Tonga</option>
+   <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+   <option value="Tunisia">Tunisia</option>
+   <option value="Turkey">Turkey</option>
+   <option value="Turkmenistan">Turkmenistan</option>
+   <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+   <option value="Tuvalu">Tuvalu</option>
+   <option value="Uganda">Uganda</option>
+   <option value="United Kingdom">United Kingdom</option>
+   <option value="Ukraine">Ukraine</option>
+   <option value="United Arab Erimates">United Arab Emirates</option>
+   <option value="United States of America">United States of America</option>
+   <option value="Uraguay">Uruguay</option>
+   <option value="Uzbekistan">Uzbekistan</option>
+   <option value="Vanuatu">Vanuatu</option>
+   <option value="Vatican City State">Vatican City State</option>
+   <option value="Venezuela">Venezuela</option>
+   <option value="Vietnam">Vietnam</option>
+   <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+   <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+   <option value="Wake Island">Wake Island</option>
+   <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+   <option value="Yemen">Yemen</option>
+   <option value="Zaire">Zaire</option>
+   <option value="Zambia">Zambia</option>
+   <option value="Zimbabwe">Zimbabwe</option>
+</select>
+</fieldset>
+<br/>
+<br/>
+<fieldset>
+How did you hear about us?
+<select id="options" name="hear">
+<option value="N/A">N/A</option>
+<option value="Social Media"> Social Media</option>
+<option value="Through a Friend"> Through a Friend</option>
+<option value="School or Job"> School or Job</option>
+<option value="Television">Television </option>
+<option value="Third-Party Review">Third-Party Review </option>
+</select>
+<br>
+Others:<br>
+<textarea rows=1 cols=50 id="others"></textarea>
+<br/>
+<br/>
+Would you like to receive our email newsletter?
+<input type="radio" name="newsletter" value="yes">Yes
+<input type="radio" name="newsletter" value="no">No
+<br/>
+<br/>
+<input type=submit value=Submit>
+<input type=reset value=Reset>
+</fieldset>
+</form>
+
+</body>
+
+<br>
+<hr>
+
+<footer>
+<h1>Contact Us</h1>
+
+<ul>
+	<li>Berna's Kitchen</li>
+	<li>Phone: 09217295952</li>
+	<li>Email: angelesbryce@gmail.com</li>
+	<li>Address: Lot 3 Block 3, Visitation Street, Sacred Heart Village, Caloocan City, Metro Manila</li>
+</ul>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.432768809951!2d121.07055491410898!3d14.744631377485431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1df08856c3d%3A0x49e97e1df824e0b7!2sBerna&#39;s%20Kitchen!5e0!3m2!1sen!2sph!4v1650534517734!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<ul>
+	<li>Mumsy's Kitchen</li>
+	<li>Phone: 09985348125</li>
+	<li>Email: buenaventuraadamlee@gmail.com</li>
+	<li>Address: 102 Kansas St. Pasig Greenpark, Barangay Dela Paz, Pasig City, Metro Manila</li>
+</ul>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.1829318410915!2d121.10005188693162!3d14.61435248241478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b83fc35418cb%3A0x788025f68517a009!2s102%20Kansas%2C%20Pasig%2C%201800%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1651052072208!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h6>by Bryce Angeles, Adam Buenaventura, Daniel Insigne, and Jose Roberto Kam</h6>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+
+
+</html>

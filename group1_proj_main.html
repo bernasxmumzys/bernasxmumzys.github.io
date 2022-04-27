@@ -1,0 +1,259 @@
+<!DOCTYPE>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Berna's Kitchen</title>
+
+<!-- CSS -->
+<style>
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  font-family: Georgia;
+  background-color: #659dbd;
+  color: #000000;
+}
+			img.logo{
+				position: fixed;
+				z-index: 1;
+			}
+#navbar {
+  background-color: #bc986a;
+  z-index: 100;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar [class=active] {
+  background-color: #8d8741;
+  color: white;
+}
+
+.dropbtn {
+  background-color: #bc986a;
+  color: white;
+  padding: 17px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: 	#808080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+ 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+div.infoh {
+  margin: auto;
+  background: rgb(152,106,188);
+  background: linear-gradient(90deg, rgba(152,106,188,1) 0%, rgba(218,173,134,1) 100%);
+  width: 1050px;
+  text-align: center;
+  border: 5px solid green;
+  border-radius: 10px;
+    color: black;
+  padding: 50px;
+}
+div.infow {
+  margin: auto;
+  background: rgb(218,173,134);
+  background: linear-gradient(90deg, rgba(218,173,134,1) 0%, rgba(152,106,188,1) 100%);
+  color: black;
+  width: 1050px;
+  text-align: center;
+  border: 5px solid cyan;
+  border-radius: 10px;
+  padding: 50px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.move1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+div.move2 {
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+@keyframes example {
+  0%   {right:800px; top:0px;}
+  100% {right:0px; top:0px;}
+}
+@keyframes example2 {
+  0%   {left:800px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+</style>
+</head>
+
+<body>
+<header>
+
+<!-- Navigation Bar -->
+<div id="navbar">
+  <a class="active" href="group1_proj_main.html">About Us</a>
+  <div class="dropdown">
+	<button class="dropbtn">Products</button>
+	<div class="dropdown-content">
+		<a href="productsB.html">Berna's Menu</a>
+		<a href="productsM.html">Mumsy's Menu</a>
+		</div>
+	</div>
+  <a href="gallery.html">Gallery</a>
+  <a href="testim.html">Testimonials</a>
+  <a href="contact.html">Contact Us</a>
+  <img class="logo" src="mumsylogo.jpg" width="150" height="150" alt="Mumsy Kitchen Logo" style="right: 85px;">
+  <img class="logo" src="x.png" width="35" height="35" alt="x" style="right: 250px; top: 50px;">
+  <img class="logo" src="bklogo.jpg" width="150" height="150" alt="Berna's Kitchen Logo" style="right:300px;">
+</div>
+</header>
+
+<h2>Welcome to Berna's Kitchen and Mumsy's Kitchen Collaboration Website!</h2>
+<hr>
+<br>
+<!-- About Us Display -->
+	<div class="infoh clearfix">
+	<div class="move1">
+	<a href="info1.html"><img src="info1page.jpg" width="300" height="200" alt="Chef Awarding" style="float:left;"></a>
+	</div>
+	<br>
+	<h2>How it started</h2>
+	<p>Want to be knowledgeable of how these two food business started? Click on the picture to the left to gather more on this matter!</p>
+	</div>
+	<br>
+<hr>
+<br>
+	<div class="infow clearfix">
+	<div class="move2">
+	<a href="info2.html"><img src="info2page.jpg" width="300" height="200" alt="Chef Awarding" style="float:right;"></a>
+	</div>
+	<br>
+	<h2>Who is behind the kitchen?</h2>
+	<p>Want to get to know the head chefs handling these two businesses? Click on the picture to the right to know more!</p>
+	</div>
+<br>
+	
+</body>
+
+<hr>
+
+<footer>
+<h1>Contact Us</h1>
+
+<ul>
+	<li>Berna's Kitchen</li>
+	<li>Phone: 09217295952</li>
+	<li>Email: angelesbryce@gmail.com</li>
+	<li>Address: Lot 3 Block 3, Visitation Street, Sacred Heart Village, Caloocan City, Metro Manila</li>
+</ul>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.432768809951!2d121.07055491410898!3d14.744631377485431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1df08856c3d%3A0x49e97e1df824e0b7!2sBerna&#39;s%20Kitchen!5e0!3m2!1sen!2sph!4v1650534517734!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<ul>
+	<li>Mumsy's Kitchen</li>
+	<li>Phone: 09985348125</li>
+	<li>Email: buenaventuraadamlee@gmail.com</li>
+	<li>Address: 102 Kansas St. Pasig Greenpark, Barangay Dela Paz, Pasig City, Metro Manila</li>
+</ul>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.1829318410915!2d121.10005188693162!3d14.61435248241478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b83fc35418cb%3A0x788025f68517a009!2s102%20Kansas%2C%20Pasig%2C%201800%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1651052072208!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h6>by Bryce Angeles, Adam Buenaventura, Daniel Insigne, and Jose Roberto Kam</h6>
+
+
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+
+
+</html>
